@@ -55,10 +55,9 @@ function Login() {
     for (var u in usuarios) {
         var us = usuarios[u];
         if (us.login === usuario && us.senha === senha) {
-            window.location = "index.html";
-            return true;
+            window.location.replace("https://cheers.com.br/evento/contrabando-18437/")
+       
         }
     }
-    alert("Dados incorretos, tente novamente.");
-    return false;
+
 }
