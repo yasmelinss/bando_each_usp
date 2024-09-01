@@ -55,7 +55,7 @@ function Login() {
     for (var u in usuarios) {
         var us = usuarios[u];
         if (us.login === usuario && us.senha === senha) {
-            window.location.replace("https://cheers.com.br/evento/contrabando-18437/")
+            window.location.replace("https://cheers.com.br/evento/contrabando-18437")
        
         }
     }
