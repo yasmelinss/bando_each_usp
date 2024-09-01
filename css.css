@@ -11,7 +11,7 @@ body {
 
 header {
 	min-height: 100%;
-	margin: 0px;
+	margin: -200px;
 	position: center;
 	background-attachment: fixed;
 	background-size: cover;
@@ -34,14 +34,10 @@ p.int {
 	text-align: justify;
 	padding: 20px;
 	color: #F0F8FF;
-	background-color: black;
-	margin-right: 500px;
-	margin-top: 500px;
 }
 
 img {
 	float: left;
-
 }
 
 
