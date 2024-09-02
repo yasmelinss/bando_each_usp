@@ -1,9 +1,9 @@
 // Debounce do Lodash
-debounce = function(func, wait, immediate) {
+debounce = function (func, wait, immediate) {
 	var timeout;
-	return function() {
+	return function () {
 		var context = this, args = arguments;
-		var later = function() {
+		var later = function () {
 			timeout = null;
 			if (!immediate) func.apply(context, args);
 		};
@@ -15,15 +15,15 @@ debounce = function(func, wait, immediate) {
 };
 
 
-(function(){
+(function () {
 	var $target = $('.im'),
-			animationClass = 'anime-start',
-			offset = $(window).height() * 3/4;
+		animationClass = 'anime-start',
+		offset = $(window).height() * 3 / 4;
 
 	function animeScroll() {
 		var documentTop = $(document).scrollTop();
 
-		$target.each(function(){
+		$target.each(function () {
 			var itemTop = $(this).offset().top;
 			if (documentTop > itemTop - offset) {
 				$(this).addClass(animationClass);
@@ -35,7 +35,7 @@ debounce = function(func, wait, immediate) {
 
 	animeScroll();
 
-	$(document).scroll(debounce(function(){
+	$(document).scroll(debounce(function () {
 		animeScroll();
 	}, 200));
 })();
@@ -43,23 +43,26 @@ debounce = function(func, wait, immediate) {
 //login
 
 function Login() {
-    var usuario = document.getElementsByName('username')[0].value.toLowerCase();
-    var senha = document.getElementsByName('password')[0].value;
+	var usuario = document.getElementsByName('username')[0].value.toLowerCase();
+	var senha = document.getElementsByName('password')[0].value;
 
 	var usuarios = [
-		{"login": "bando", "senha": "esgurmo"},
+		{ "login": "bando", "senha": "esgurmo" },
 	];
 
-    for (var u in usuarios) {
-        var us = usuarios[u];
-        if (us.login === usuario && us.senha === senha) {
+	for (var u in usuarios) {
+		var us = usuarios[u];
+		if (us.login === usuario && us.senha === senha) {
 
-			try { window.location.replace("https://cheers.com.br/evento/contrabando-18437"); } 
-    catch(e) { window.location = "https://cheers.com.br/evento/contrabando-18437"; 
-		return true;
+			try { window.location.replace("https://cheers.com.br/evento/contrabando-18437"); 
+				
+			}
+			catch (e) {
+				window.location = "https://cheers.com.br/evento/contrabando-18437";
+				return true;
+			}
+		}
 	}
-        }
-    }
 	alert("Dados incorretos, tente novamente.");
-    return false;
+	return false;
 }
