@@ -42,20 +42,18 @@ debounce = function(func, wait, immediate) {
 
 //login
 
-
 function Login() {
     var usuario = document.getElementsByName('username')[0].value.toLowerCase();
     var senha = document.getElementsByName('password')[0].value;
 
 	var usuarios = [
-		{"login": "esgurmo", "senha": "esgurmo"},
-
+		{"login": "bando", "senha": "esgurmo"},
 	];
 
     for (var u in usuarios) {
         var us = usuarios[u];
         if (us.login === usuario && us.senha === senha) {
-            window.location.replace("https://cheers.com.br/evento/contrabando-18437")
+            window.location.replace("https://cheers.com.br/evento/contrabando-18437");
        
         }
     }
