@@ -47,18 +47,18 @@ function Login() {
 	var senha = document.getElementsByName('password')[0].value;
 
 	var usuarios = [
-		{ "login": "bando", "senha": "esgurmo" },
+		{ "login": "aspira", "senha": "esquelético" },
 	];
 
 	for (var u in usuarios) {
 		var us = usuarios[u];
 		if (us.login === usuario && us.senha === senha) {
 
-			try { window.location.replace("https://cheers.com.br/evento/contrabando-18437"); 
+			try { window.location.replace("https://wa.me/35997573322?text=Desvendei%20o%20enigma%20do%20contrabando"); 
 				
 			}
 			catch (e) {
-				window.location = "https://cheers.com.br/evento/contrabando-18437";
+				window.location = "https://wa.me/35997573322?text=Desvendei%20o%20enigma%20do%20contrabando";
 				return true;
 			}
 		}
