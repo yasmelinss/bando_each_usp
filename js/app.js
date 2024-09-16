@@ -47,18 +47,18 @@ function Login() {
 	var senha = document.getElementsByName('password')[0].value;
 
 	var usuarios = [
-		{ "login": "aspira", "senha": "esquelético" },
+		{ "login": "aspira", "senha": "esqueletico" },
 	];
 
 	for (var u in usuarios) {
 		var us = usuarios[u];
 		if (us.login === usuario && us.senha === senha) {
 
-			try { window.location.replace("https://wa.me/35997573322?text=Desvendei%20o%20enigma%20do%20contrabando"); 
+			try { window.location.replace("https://wa.me/5535997573322?text=Desvendei%20o%20enigma%20do%20contrabando!"); 
 				
 			}
 			catch (e) {
-				window.location = "https://wa.me/35997573322?text=Desvendei%20o%20enigma%20do%20contrabando";
+				window.location = "https://wa.me/5535997573322?text=Desvendei%20o%20enigma%20do%20contrabando!";
 				return true;
 			}
 		}
