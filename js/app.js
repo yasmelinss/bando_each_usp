@@ -63,6 +63,7 @@ function Login() {
 			}
 		}
 	}
+	
 	alert("Dados incorretos, tente novamente.");
 	return false;
 }
